@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">android_kotilin_learn_2</string>
+    <string name="save">保存</string>
+    <string name="constHeight">身長</string>
+    <string name="heightValue">170</string>
+    <string name="height_radio1">140</string>
+    <string name="height_radio2">160</string>
+    <string name="height_radio">170</string>
+    <string name="height_radio4">180</string>
 </resources>
