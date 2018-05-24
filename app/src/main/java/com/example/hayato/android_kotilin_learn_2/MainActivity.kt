@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val pref = Preference(this)
         pref.setPreferenceText()
         save.setOnClickListener { pref.savePreference() }
+        clear.setOnClickListener{ pref.clear()}
         heightButton.setOnClickListener{startActivity<HeightActivity>()}
     }
 
@@ -45,6 +46,14 @@ class MainActivity : AppCompatActivity() {
                 putString(inseamKey, inseam.text.toString())
                 apply()
             }
+        }
+
+        fun clear(){
+            pref.edit().clear().apply()
+            neck.setText("")
+            sleeve.setText("")
+            waist.setText("")
+            inseam.setText("")
         }
     }
 }
